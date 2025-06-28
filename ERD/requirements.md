@@ -1,6 +1,6 @@
-# Airbnb-like Platform Database Schema
+# Airbnb-clone Platform Database Schema
 
-This document outlines the database schema for an Airbnb-like platform, including entities, their attributes, relationships, and an Entity-Relationship (ER) diagram.
+This document outlines the database schema for an Airbnb-clone platform, including entities, their attributes, relationships, and an Entity-Relationship (ER) diagram.
 
 ---
 
@@ -119,13 +119,13 @@ Entities are rectangles, attributes are listed inside, and relationships are lin
 - **Relationships:** Lines with cardinality (e.g., 1:N for User to Property)
 - **Constraints:** Noted where applicable (e.g., UNIQUE on `User.email`, CHECK on `Review.rating`)
 
-![ER Diagram for Airbnb-like Platform](erd-airbnb.png)
+![ER Diagram for Airbnb-clone Platform](erd-airbnb.png)
 
 ---
 
 ## Notes
 
-- The schema supports core Airbnb-like functionality: user management, property listings, bookings, payments, reviews, and messaging.
+- The schema supports core Airbnb-clone functionality: user management, property listings, bookings, payments, reviews, and messaging.
 - Indexes on primary keys and foreign keys (e.g., `email`, `property_id`, `booking_id`) optimize query performance.
 - **Recommended constraints:**
   - `end_date > start_date` in `Booking`
